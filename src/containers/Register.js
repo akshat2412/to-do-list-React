@@ -1,7 +1,7 @@
 import {connect} from 'react-redux'
 import Content from './Content'
 import Register from '../components/Register'
-import {addUser, addCurrentUser} from '../actions'
+import {addUser, addCurrentUser, toggleLoggedin} from '../actions'
 import { bindActionCreators } from 'redux';
 
 const mapStateToProps=(state)=>{
@@ -18,7 +18,8 @@ const mapStateToProps=(state)=>{
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     addUser: addUser,
-    addCurrentUser: addCurrentUser
+    addCurrentUser: addCurrentUser, 
+    toggleLoggedin: toggleLoggedin
   }, dispatch)
 }
 

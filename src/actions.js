@@ -7,17 +7,17 @@ export function addUser(name, login_id, password, tasks=[]){
 	}
 }
 
-export function addTask(name, login_id, password, tasks=[]){
+export function addTask(login_id, tasks=[]){
 	return {
 		type: actions.ADD_TASK,
-		payload:{name, login_id, password, tasks}
+		payload:{login_id, tasks}
 	}
 }
 
-export function deleteTask(name, login_id, password, tasks=[]){
+export function deleteTask(login_id, task_id){
 	return {
 		type: actions.DELETE_TASK,
-		payload:{name, login_id, password, tasks}
+		payload:{login_id, task_id}
 	}
 }
 

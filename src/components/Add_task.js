@@ -8,6 +8,11 @@ import '../css/index.css';
 
 export default class Add_task extends Component{
 	setHeading(state, id){
+		console.log("received id is "+id)
+		if(id==0){
+			
+			return "Heading"
+		}
 		var curr_user=state.users.find(user=>user.login_id===state.current_user.login_id)
 		console.log("curr_user "+JSON.stringify(curr_user))
 		var task=curr_user.tasks.find(task=>String(task.id)===id)
@@ -15,6 +20,9 @@ export default class Add_task extends Component{
 	}
 
 	setDescription(state, id){
+		if(id==0){
+			return "Description"
+		}
 		var curr_user=state.users.find(user=>user.login_id===state.current_user.login_id)
 		console.log("curr_user "+JSON.stringify(curr_user))
 		var task=curr_user.tasks.find(task=>String(task.id)===id)
@@ -25,8 +33,7 @@ export default class Add_task extends Component{
     	if(this.refs.heading.value!==""||this.refs.description.value!==""){
     		console.log("empty task added")
 	    	this.props.addTask(
-				"abc",
-				"abc","passwordabc",
+				this.props.state.current_user.login_id,
 				[
 					{
 						"heading":this.refs.heading.value,
@@ -34,7 +41,13 @@ export default class Add_task extends Component{
 					}
 				]
 			)
-    	}
+			if(this.props.match.params.id!=0){
+				this.props.deleteTask(
+					this.props.state.current_user.login_id,
+					this.props.match.params.id
+				)
+			}
+		}
   	}
 	render(){
 		return(

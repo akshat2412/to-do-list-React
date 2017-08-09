@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import Add_task from '../components/Add_task'
-import {addTask} from '../actions'
+import {addTask,deleteTask} from '../actions'
 import { bindActionCreators } from 'redux';
 
 const mapStateToProps=(state)=>{
@@ -16,7 +16,8 @@ const mapStateToProps=(state)=>{
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
-    addTask: addTask
+    addTask: addTask,
+    deleteTask: deleteTask
   }, dispatch)
 }
 

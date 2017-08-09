@@ -22,7 +22,7 @@ export const users = (state=[], action) =>{
 			console.log("new task is " + JSON.stringify(new_task))
 			var new_state=JSON.parse(JSON.stringify(state))
 			var d = Date()
-			new_task["id"] = new_task.heading+new_task.description.substring(0,10)
+			new_task["id"] = 'id-' + Math.random().toString(36).substr(2, 16);
 			new_state=new_state.map(user=>{
 				if(user.login_id===action.payload.login_id){
 					user.tasks.push(new_task)
@@ -32,14 +32,17 @@ export const users = (state=[], action) =>{
 			return new_state
 
 		case actions.DELETE_TASK:
-			var task_to_delete=action.payload.tasks[0];
+			console.log("id to delete "+action.payload.task_id)
+			var task_to_delete_id=action.payload.task_id;
 			var new_state=JSON.parse(JSON.stringify(state))
+			console.log("state before deleting "+JSON.stringify(new_state))
 			new_state=new_state.map(user=>{
 				if(user.login_id===action.payload.login_id){
-					user.tasks=user.tasks.filter(task=>task.id!==task_to_delete.id)
+					user.tasks=user.tasks.filter(task=>task.id!=task_to_delete_id)
 				}
 				return user
 			})
+			console.log("state after deleting "+JSON.stringify(new_state))
 			return new_state
 
 		case actions.COMPLETE_TASK:

@@ -4,6 +4,7 @@ import Add_task_icon from './Add_task_icon'
 import { Small_notes_row } from './Small_notes_row';
 import {tasks, tasks_completed, no_of_tasks} from '../initialstate.json'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 import '../css/standardize.css';
 import '../css/index-grid.css';
 import '../css/index.css';
@@ -32,7 +33,9 @@ export class Content extends Component{
 		return(
 			<div className="body page-index clearfix">
 				<Header />
-				<Add_task_icon />
+				<Link to={"/add-task/0"}>
+					<Add_task_icon />
+				</Link>
 				<p className="text main-heading-2 text-2">Tasks to be Completed</p>
 				{this.renderRow(this.props.tasks)}
 			</div>
