@@ -1,0 +1,54 @@
+{
+	"users": [
+		{
+			"name": "abc",
+			"login_id": "abc",
+			"password": "passwordabc",
+			"tasks": [
+				{
+					"heading": "heading of the task",
+					"description": "description of the task",
+					"id":1
+				},
+				{
+					"heading": "heading of the task 2",
+					"description": "description of the task second",
+					"id":2
+				},
+				{
+					"heading": "heading of the task 3",
+					"description": "description of the task fourth",
+					"id":3
+				}
+			]
+		},
+		{
+			"name": "def",
+			"login_id": "def",
+			"password": "passworddef",
+			"tasks": [
+				{
+					"heading": "heading of the task3",
+					"description": "description of the task third",
+					"id":1
+
+				}
+			]
+		},
+		{
+			"name": "xyz",
+			"login_id": "xyz",
+			"password": "passwordxyz",
+			"tasks": []
+		},
+		{
+			"name": "123",
+			"login_id": "123",
+			"password": "password123",
+			"tasks": []
+		}
+	],
+	"current_user":{},
+	"login_page":[],
+	"loggedIn":false
+}

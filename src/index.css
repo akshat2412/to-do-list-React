@@ -1,0 +1,336 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 0.938em/1.38 'Roboto Condensed';
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  float: left;
+}
+
+.image {
+  display: block;
+  position: relative;
+  float: left;
+  height: auto;
+  overflow: hidden;
+}
+
+.main-heading {
+  position: relative;
+  z-index: 2;
+  width: 84.4221105527%;
+  height: 95px;
+  min-height: 50px;
+  max-height: 120px;
+  margin: -153px 0 0 7.78502%;
+  font-family: 'Yanone Kaffeesatz';
+  font-size: 5.333em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.main-heading-2 {
+  width: 25.6%;
+  min-height: 70px;
+  margin: 30px 0 0 37.1992199999%;
+  padding: 20px;
+  font-size: 1.667em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.note_1 {
+  position: relative;
+  clear: both;
+  z-index: 8;
+  width: 245px;
+  max-width: 245px;
+  height: 256px;
+  max-height: 256px;
+  margin: -289px 0 0 6.55405%;
+}
+
+.note_1 .image {
+  z-index: 6;
+  width: 245px;
+  margin-left: -0.24235%;
+}
+
+.note_1 .text {
+  z-index: 7;
+  width: 75.9183673469%;
+  min-height: 197px;
+  margin: -235px 0 0 10.58036%;
+  font-size: 1em;
+}
+
+.note_2 {
+  position: relative;
+  z-index: 11;
+  width: 245px;
+  max-width: 245px;
+  height: 256px;
+  max-height: 256px;
+  margin: -301px 0 0 37.46098%;
+}
+
+.note_2 .image {
+  z-index: 9;
+  width: 245px;
+  margin-left: -0.24235%;
+}
+
+.note_2 .text {
+  z-index: 10;
+  width: 75.9183673469%;
+  min-height: 197px;
+  margin: -235px 0 0 10.58036%;
+  font-size: 1em;
+}
+
+.note_3 {
+  position: relative;
+  z-index: 14;
+  width: 245px;
+  max-width: 245px;
+  height: 256px;
+  max-height: 256px;
+  margin: -290px 0 0 68.88658%;
+}
+
+.note_3 .image {
+  z-index: 12;
+  width: 245px;
+  margin-left: -0.24235%;
+}
+
+.note_3 .text {
+  z-index: 13;
+  width: 75.9183673469%;
+  min-height: 197px;
+  margin: -235px 0 0 10.58036%;
+  font-size: 1em;
+}
+
+.notes_row {
+  clear: both;
+  width: 80.0833333333%;
+  height: 326px;
+  margin: 10px 0 0 10%;
+}
+
+.page_header {
+  width: 66.3333333333%;
+  height: 153px;
+  margin-left: 16.83073%;
+}
+
+.page_header .container {
+  z-index: 1;
+  height: 153px;
+  margin-left: -0.05104%;
+  border: 6px solid rgb(0, 0, 0);
+  border-top-right-radius: 60px;
+}
+
+.taskbox {
+  position: relative;
+}
+
+.text {
+  float: left;
+  clear: both;
+  color: rgb(0, 0, 0);
+}
+
+.text- {
+  position: relative;
+  float: left;
+  z-index: 0;
+  width: 79.648241206%;
+  height: 57px;
+  min-height: 57px;
+  margin: -58px 0 0 10.19551%;
+  font-family: 'Yanone Kaffeesatz';
+  font-size: 1.467em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+._container {
+  clear: both;
+  width: 631px;
+  min-width: 631px;
+  height: 658px;
+  min-height: 658px;
+  margin: 57px 0 0 25.70703%;
+}
+
+._element {
+  position: relative;
+  width: 100%;
+}
+
+.notes_row ._element {
+  z-index: 5;
+  height: 326px;
+}
+
+.image-4 {
+  z-index: 16;
+  width: 631px;
+  margin-left: -0.0941%;
+}
+
+.text-6 {
+  z-index: 17;
+  width: 76.0697305863%;
+  min-height: 490px;
+  margin: -606px 0 0 9.37748%;
+  padding: 5px;
+  font-family: Helvetica;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+@media(max-width: 900px) {
+  .container .container {
+    position: relative;
+  }
+
+  .container .image {
+    position: relative;
+    height: auto;
+  }
+
+  .container .main-heading {
+    z-index: 2;
+    margin-top: -133px;
+    margin-left: 7.69996%;
+    font-size: 4em;
+  }
+
+  .container .note_1 {
+    z-index: 8;
+    width: 27.2222222222%;
+    height: 254px;
+    margin-top: 517px;
+    margin-left: 15.22049%;
+  }
+
+  .container .note_2 {
+    clear: both;
+    z-index: 11;
+    width: 27.2222222222%;
+    margin-top: 35px;
+    margin-left: 0;
+  }
+
+  .container .note_3 {
+    clear: both;
+    z-index: 14;
+    width: 27.2222222222%;
+    margin-top: -80px;
+    margin-left: 0;
+  }
+
+  .container .text {
+    position: relative;
+  }
+
+  .container .text- {
+    position: relative;
+    z-index: 0;
+    margin-top: -57px;
+    margin-left: 10.11307%;
+  }
+
+  .main-heading-2 {
+    margin-top: 466px;
+    margin-left: 37.19792%;
+  }
+
+  .note_1 .image {
+    z-index: 6;
+    margin-left: -0.08929%;
+  }
+
+  .note_1 .text {
+    z-index: 7;
+    width: 56.9387755102%;
+    margin-top: -233px;
+    margin-left: 8.02296%;
+  }
+
+  .note_2 .image {
+    z-index: 9;
+    margin-left: -0.03827%;
+  }
+
+  .note_2 .text {
+    z-index: 10;
+    width: 42.7040816326%;
+    margin-top: -233px;
+    margin-left: 6.02679%;
+  }
+
+  .note_3 .image {
+    z-index: 12;
+    margin-top: 15px;
+    margin-left: -0.01276%;
+  }
+
+  .note_3 .text {
+    z-index: 13;
+    width: 14.7151898734%;
+    margin-top: 0;
+    margin-left: 50.7844399999%;
+  }
+
+  .notes_row {
+    position: relative;
+    z-index: 15;
+    width: 100%;
+    height: 1564px;
+    margin-top: -460px;
+    margin-left: 0;
+  }
+
+  .page_header {
+    margin-left: 16.88889%;
+  }
+
+  .page_header .container {
+    z-index: 1;
+    margin-left: -0.08899%;
+  }
+
+  .text {
+    position: relative;
+    z-index: 4;
+  }
+
+  ._container {
+    position: relative;
+    z-index: 18;
+    margin-top: -1181px;
+    margin-left: 34.27778%;
+  }
+
+  .notes_row ._element {
+    float: none;
+    z-index: 5;
+    width: 80.0833333333%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container .image-4 {
+    z-index: 16;
+  }
+
+  .container .text-6 {
+    z-index: 17;
+  }
+}
