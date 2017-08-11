@@ -46,11 +46,16 @@ export const users = (state=[], action) =>{
 			return new_state
 
 		case actions.COMPLETE_TASK:
-			var task_to_delete=action.payload.tasks[0];
+			var task_to_delete_id=action.payload.task_id;
 			var new_state=JSON.parse(JSON.stringify(state))
 			new_state=new_state.map(user=>{
 				if(user.login_id===action.payload.login_id){
-					user.tasks=user.tasks.filter(task=>task.id!==task_to_delete.id)
+					user.tasks.map(task=>{
+						if(task.id===task_to_delete_id){
+							user.completed.push(task)
+						}
+					})
+					user.tasks=user.tasks.filter(task=>task.id!==task_to_delete_id)
 				}
 				return user
 			})

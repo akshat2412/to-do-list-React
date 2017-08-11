@@ -21,10 +21,10 @@ export function deleteTask(login_id, task_id){
 	}
 }
 
-export function completeTask(name, login_id, password, tasks=[]){
+export function completeTask(login_id, task_id){
 	return {
 		type: actions.COMPLETE_TASK,
-		payload:{name, login_id, password, tasks}
+		payload:{login_id, task_id}
 	}
 }
 

@@ -20,7 +20,8 @@
 					"description": "description of the task fourth",
 					"id":3
 				}
-			]
+			],
+			"completed":[]
 		},
 		{
 			"name": "def",
@@ -33,22 +34,24 @@
 					"id":1
 
 				}
-			]
+			],
+			"completed":[]
 		},
 		{
 			"name": "xyz",
 			"login_id": "xyz",
 			"password": "passwordxyz",
-			"tasks": []
+			"tasks": [],
+			"completed":[]
 		},
 		{
 			"name": "123",
 			"login_id": "123",
 			"password": "password123",
-			"tasks": []
+			"tasks": [],
+			"completed":[]
 		}
 	],
 	"current_user":{},
-	"login_page":[],
 	"loggedIn":false
 }

@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "history": "^4.6.3",
+    "radium": "^0.19.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-icons": "^2.2.5",
     "react-scripts": "1.0.10"
   },
   "scripts": {

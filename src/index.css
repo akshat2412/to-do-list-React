@@ -194,6 +194,10 @@ body {
   text-align: center;
 }
 
+svg{
+  color: red;
+}
+
 @media(max-width: 900px) {
   .container .container {
     position: relative;
