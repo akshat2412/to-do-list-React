@@ -24,19 +24,15 @@ export class Small_notes_row extends Component{
 		)
 	}
 	handleDelete=()=>{
-		console.log("handleDelete running")
 	}
 	renderNotes = function(three_tasks_list){
-		// console.log("current user received is "+JSON.stringify(this.props.current_user))
-		console.log("received current_user is "+JSON.stringify(this.props.current_user))
-		console.log("received deleteTask is "+this.props.deleteTask)
 		return(three_tasks_list.map((task, i)=>{
 			if(i===0){
 				return(
 					<div className="container small_note_1 clearfix" key={i}>
 						{this.setTrashicon(task.id)}
 						{this.setCheckicon(task.id)}
-						<Link to={"/add-task/"+task.id}>
+						<Link to={"/add-task/"+task.id+"/"+this.props.replace} >
 						  	<img className="image" src={require("./images/Post-it-note-transparent(2).png")}></img>
 						  	<p className="text small_note_heading">{task.heading.substring(0,16)}..</p>
 						  	<p className="text small_note_description">{task.description.substring(0,33)}..</p>
@@ -49,7 +45,7 @@ export class Small_notes_row extends Component{
 					<div className="container small_note_2 clearfix" key={i}>
 						{this.setTrashicon(task.id)}
 						{this.setCheckicon(task.id)}
-						<Link to={"/add-task/"+task.id}>
+						<Link to={"/add-task/"+task.id+"/"+this.props.replace} >
 						  	<img className="image" src={require("./images/Post-it-note-transparent(2).png")}></img>
 						  	<p className="text small_note_heading">{task.heading.substring(0,16)}..</p>
 							<p className="text small_note_description">{task.description.substring(0,33)}..</p>
@@ -62,7 +58,7 @@ export class Small_notes_row extends Component{
 					<div className="container small_note_3 container-5 clearfix" key={i}>
 						{this.setTrashicon(task.id)}
 						{this.setCheckicon(task.id)}
-						<Link to={"/add-task/"+task.id}>
+						<Link to={"/add-task/"+task.id+"/"+this.props.replace} >
 						  	<img className="image" src={require("./images/Post-it-note-transparent(2).png")}></img>
 						  	<p className="text small_note_heading">{task.heading.substring(0,16)}..</p>
 						  	<p className="text small_note_description">{task.description.substring(0,33)}..</p>

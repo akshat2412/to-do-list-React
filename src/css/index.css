@@ -24,6 +24,7 @@ body {
   min-height: 38px;
   padding: 4px;
   font-size: 1em;
+  color: rgb(0, 0, 0);
 }
 
 .image {
@@ -48,15 +49,15 @@ body {
 
 .login_container {
   clear: both;
-  z-index: 47;
+  z-index: 49;
   width: 52.9166666666%;
   height: 378px;
   margin: 76px 0 0 23.58073%;
 }
 
-.login_container .text {
+.login_container .generic_font {
   width: 30.4303278688%;
-  margin-left: -0.12456%;
+  margin-left: -0.1209%;
 }
 
 .main-heading {
@@ -71,6 +72,7 @@ body {
   font-family: 'Yanone Kaffeesatz';
   font-size: 4em;
   font-weight: 700;
+  color: rgb(0, 0, 0);
 }
 
 .main-heading-2 {
@@ -81,6 +83,7 @@ body {
   font-family: 'Roboto Condensed';
   font-size: 1.25em;
   font-weight: 700;
+  color: rgb(0, 0, 0);
 }
 
 .page_header {
@@ -135,7 +138,6 @@ body {
   min-height: 147px;
   max-height: 147px;
   margin-top: -186px;
-  word-wrap: break-word;
 }
 
 .small_note_1 .small_note_heading {
@@ -173,7 +175,6 @@ body {
   min-height: 147px;
   max-height: 147px;
   margin-top: -186px;
-  word-wrap: break-word;
 }
 
 .small_note_2 .small_note_heading {
@@ -211,7 +212,6 @@ body {
   height: 145px;
   min-height: 145px;
   margin-top: -187px;
-  word-wrap: break-word;
 }
 
 .small_note_3 .small_note_heading {
@@ -231,6 +231,7 @@ body {
   width: 185px;
   min-width: 185px;
   font-size: 1.5em;
+  color: rgb(0, 0, 0);
 }
 
 .small_note_heading {
@@ -240,6 +241,7 @@ body {
   min-height: 40px;
   padding: 5px;
   font-size: 1.15em;
+  color: rgb(0, 0, 0);
 }
 
 .small_notes_row {
@@ -253,7 +255,6 @@ body {
 .text {
   float: left;
   text-align: center;
-  color: rgb(0, 0, 0);
 }
 
 .text- {
@@ -296,6 +297,36 @@ body {
   float: left;
   padding: 0 10px;
   color: rgb(0, 0, 0);
+}
+
+._select {
+  display: block;
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 50;
+  width: 20.5833333333%;
+  height: 48px;
+  margin: 50px 0 0 39.1666666666%;
+  padding-left: 10px;
+  /*border: 1px solid rgb(119, 119, 119);*/
+  border-radius: 3px;
+  background: url('../images/select-arrows.svg') rgb(242, 242, 242);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: right center;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+._text {
+  position: relative;
+  z-index: 48;
+  width: 61.2278543307%;
+  min-height: 27px;
+  margin: -169px 0 0 25.73081%;
+  font-size: 0.8em;
+  color: rgb(199, 18, 18);
 }
 
 ._textarea {
@@ -352,7 +383,7 @@ body {
 
 .login_container ._element {
   visibility: hidden;
-  z-index: 38;
+  z-index: 39;
   height: 378px;
   margin-left: -0.00246%;
   border-width: 1px;
@@ -400,13 +431,13 @@ body {
 
 .container-11 {
   clear: both;
-  z-index: 41;
-  margin: -319px 0 0 9.91634%;
+  z-index: 42;
+  margin: -319px 0 0 9.91142%;
 }
 
 .container-12 {
-  z-index: 44;
-  margin: -228px 0 0 9.9187999999%;
+  z-index: 45;
+  margin: -228px 0 0 9.91388%;
 }
 
 .container-15 {
@@ -428,16 +459,16 @@ body {
   position: fixed;
   top: 57px;
   left: 76.4973958333%;
-  z-index: 48;
+  z-index: 38;
   width: 62px;
 }
 
-.text-12 {
+.text-13 {
   width: 26.4288441955%;
 }
 
-.text-13,
-.text-14 {
+.text-14,
+.text-15 {
   width: 26.4320264765%;
 }
 
@@ -458,13 +489,13 @@ body {
 }
 
 .container ._button-3 {
-  z-index: 45;
-  margin-left: 35.5561%;
+  z-index: 46;
+  margin-left: 35.54872%;
 }
 
 .container ._button-4 {
-  z-index: 46;
-  margin-left: 61.25738%;
+  z-index: 47;
+  margin-left: 61.25%;
 }
 
 .container ._input-4 {
@@ -482,6 +513,48 @@ body {
   margin-left: 6.84382%;
 }
 
+._button-6 {
+  clear: both;
+  z-index: 53;
+  width: 25.6%;
+  height: 50px;
+  margin: 50px 0 0 10%;
+  background-color: rgb(31, 191, 182);
+  box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, .5);
+}
+._button-6:hover{
+  box-shadow: none;
+}
+
+._button-7 {
+  z-index: 54;
+  width: 25.5499999999%;
+  height: 50px;
+  margin: 50px 0 0 1.5989583333%;
+  background-color: rgb(31, 191, 182);
+  box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, .5);
+}
+
+._button-7:hover{
+  box-shadow: none;
+}
+
+._button-8 {
+  z-index: 55;
+  width: 25.6833333333%;
+  height: 50px;
+  margin: 50px 0 0 1.65234375%;
+  background-color: rgb(31, 191, 182);
+  box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, .5);
+}
+
+._button-8:hover{
+  box-shadow: none;
+}
+
+#pressed{
+  box-shadow: none;
+}
 
 @media(max-width: 900px) {
   .container {
@@ -571,13 +644,13 @@ body {
   }
 
   .login_container {
-    z-index: 47;
-    width: 72.6423611111%;
+    z-index: 49;
+    width: 72.6163194444%;
     height: 933px;
     margin-left: 23.66667%;
   }
 
-  .login_container .text {
+  .login_container .generic_font {
     width: 31.7631740196%;
     margin-top: 240px;
   }
@@ -673,8 +746,22 @@ body {
     margin-left: 37.19792%;
   }
 
+  ._select {
+    position: relative;
+    z-index: 50;
+  }
+
   .container ._button {
     position: relative;
+  }
+
+  .container ._text {
+    position: relative;
+    clear: both;
+    z-index: 48;
+    width: 44.5872655596%;
+    margin-top: 354px;
+    margin-left: 18.61955%;
   }
 
   .container ._textarea {
@@ -696,18 +783,18 @@ body {
   }
 
   .login_container ._button {
-    width: 15.3864532313%;
+    width: 15.3816748297%;
   }
 
   .login_container ._container {
     height: 278px;
-    margin-left: 37.4623599999%;
+    margin-left: 37.44949%;
   }
 
   .login_container ._element {
-    z-index: 38;
-    width: 96.944212161%;
-    margin-left: -0.11711%;
+    z-index: 39;
+    width: 96.9131525504%;
+    margin-left: -0.11476%;
   }
 
   .login_container ._input {
@@ -743,14 +830,14 @@ body {
   }
 
   .container .container-11 {
-    z-index: 41;
-    width: 62.3008003822%;
+    z-index: 42;
+    width: 62.2792975749%;
     margin-top: -337px;
   }
 
   .container .container-12 {
-    z-index: 44;
-    width: 62.3868116115%;
+    z-index: 45;
+    width: 62.3653088042%;
     margin-top: -246px;
   }
 
@@ -770,26 +857,26 @@ body {
   }
 
   .container .text-10 {
-    margin-left: -0.00766%;
+    margin-left: -0.00383%;
   }
 
-  .container .text-12 {
+  .container .text-13 {
     width: 35.1647418478%;
     margin-left: -0.21685%;
   }
 
-  .container .text-13 {
+  .container .text-14 {
     width: 35.0609756097%;
     margin-left: -0.2122%;
   }
 
-  .container .text-14 {
+  .container .text-15 {
     width: 35.15625%;
     margin-left: -0.22079%;
   }
 
   .container .text-9 {
-    margin-left: -0.00767%;
+    margin-left: -0.00384%;
   }
 
   .container ._button-1 {
@@ -806,23 +893,23 @@ body {
 
   .container ._button-3 {
     clear: both;
-    z-index: 45;
-    margin-top: 487px;
-    margin-left: 25.77793%;
+    z-index: 46;
+    margin-top: 106px;
+    margin-left: 25.76804%;
   }
 
   .container ._button-4 {
-    z-index: 46;
-    margin-top: 396px;
-    margin-left: 3.32919%;
+    z-index: 47;
+    margin-top: 15px;
+    margin-left: 3.3256%;
   }
 
   .container ._input-2 {
-    margin-left: 7.98327%;
+    margin-left: 7.98111%;
   }
 
   .container ._input-3 {
-    margin-left: 7.96077%;
+    margin-left: 7.9586%;
   }
 
   .container ._input-4 {

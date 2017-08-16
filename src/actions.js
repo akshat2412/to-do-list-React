@@ -1,9 +1,9 @@
 import actions from './constants'
 
-export function addUser(name, login_id, password, tasks=[]){
+export function addUser(name, login_id, password, tasks=[],completed=[]){
 	return {
 		type: actions.ADD_USER,
-		payload:{name, login_id, password, tasks}
+		payload:{name, login_id, password, tasks,completed}
 	}
 }
 

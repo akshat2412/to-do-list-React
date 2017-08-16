@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header } from './Header';
+import Header from './Header';
 import {Link} from 'react-router-dom'
 import Register from '../containers/Register'
 import '../css/standardize.css';
@@ -9,12 +9,10 @@ import '../css/index.css';
 export default class Login extends Component{
 	validate=()=>{
 		console.log("user name = "+this.refs.user_name.value)
-		console.log("password = "+this.refs.password.value)
 		var found = false
 		this.props.state.users.map(user=>{
 			if(user.login_id===this.refs.user_name.value){
 				if(user.password===this.refs.password.value){
-					console.log("password matched")
 					this.props.toggleLoggedin(true)
 					this.props.addCurrentUser(user.name, user.login_id)
 					found=true;

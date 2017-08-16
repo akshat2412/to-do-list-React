@@ -10,8 +10,18 @@ import '../css/index-grid.css';
 import '../css/index.css';
 
 export class Content extends Component{
+	renderContent(tasks){
+		if(tasks.length===0){
+			return null
+		}
+		return(
+			<div>
+				<p className="text main-heading-2 text-2">Tasks to be Completed</p>
+				{this.renderRow(this.props.tasks)}
+			</div>
+		)
+	}
 	renderRow(tasks){
-		// console.log("received tasks are "+tasks)
 		var three_tasks_list=[]
 		var no_of_tasks = tasks.length
 		return(tasks.map((task,i)=>{
@@ -20,8 +30,7 @@ export class Content extends Component{
 			}
 			three_tasks_list.push(task)
 			if(i+1===no_of_tasks || (i+1)%3===0){
-				console.log(three_tasks_list,i)
-				return (<Small_notes_row three_tasks_list={three_tasks_list} deleteTask={this.props.deleteTask} current_user={this.props.current_user} completeTask={this.props.completeTask} key={i} type="to-be-completed"/>)
+				return (<Small_notes_row three_tasks_list={three_tasks_list} deleteTask={this.props.deleteTask} current_user={this.props.current_user} completeTask={this.props.completeTask} key={i} type="to-be-completed" replace={this.props.replace} />)
 			}
 			return null
 		}))
@@ -30,13 +39,11 @@ export class Content extends Component{
 
 	render(){
 		return(
-			<div className="body page-index clearfix">
-				<Header />
-				<Link to={"/add-task/0"}>
+			<div>
+				<Link to={"/add-task/0/All"}>
 					<Add_task_icon />
 				</Link>
-				<p className="text main-heading-2 text-2">Tasks to be Completed</p>
-				{this.renderRow(this.props.tasks)}
+				{this.renderContent(this.props.tasks)}
 			</div>
 		)
 	}

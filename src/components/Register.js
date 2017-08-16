@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header } from './Header';
+import Header from './Header';
 import '../css/standardize.css';
 import '../css/index-grid.css';
 import '../css/index.css';
@@ -12,9 +12,6 @@ export default class Register extends Component{
 	}
 	validate=(event)=>{
 		event.preventDefault()
-		console.log(this.refs.name.value)
-		console.log(this.refs.login_id.value)
-		console.log(this.refs.password.value)
 		if(this.userExists(this.refs.login_id.value)){
 			console.log("user already exists")
 		}
@@ -36,7 +33,6 @@ export default class Register extends Component{
 	}
 
 	render(){
-		console.log(this.validate)
 		return(
 			<div className="body page-index clearfix">
 				<Header />

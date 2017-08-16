@@ -4,6 +4,9 @@ import Content  from './containers/Content';
 import Landing  from './containers/Landing';
 import Add_task  from './containers/Add_task';
 import Register  from './containers/Register';
+import Content_only from './components/Content_only';
+import Completed_only from './components/Completed_only';
+import All from './components/All';
 import registerServiceWorker from './registerServiceWorker';
 import storeFactory from './store'
 import {addUser, addTask, deleteTask, completeTask, addCurrentUser, toggleLoggedin} from './actions'
@@ -11,6 +14,8 @@ import { Provider } from 'react-redux'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 import initialstate from './initialstate'
+
+
 window.React = React
 var local_storage={}
 var newstate = (local_storage['redux_store']) ? JSON.parse(local_storage['redux_store']):initialstate
@@ -71,8 +76,11 @@ ReactDOM.render(<Provider store = {store}>
 					<Router history={createHistory} >
 						<div>
 							<Route exact path="/" component={Landing} />
-							<Route exact path="/add-task/:id" component={Add_task} />
+							<Route exact path="/add-task/:id/:replace" component={Add_task} />
 							<Route exact path="/Register" component={Register} />
+							<Route exact path="/Active" component={Content_only} />
+							<Route exact path="/Completed" component={Completed_only} />
+							<Route exact path="/All" component={All} />
 						</div>
 					</Router>
 				</Provider>, 
