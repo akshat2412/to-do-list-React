@@ -10,6 +10,11 @@ import '../css/index-grid.css';
 import '../css/index.css';
 
 export class Content extends Component{
+	componentWillUpdate(nextProps, nextState){
+		console.log("something changed")
+		console.log(nextProps)
+		console.log(nextState)
+	}
 	renderContent(tasks){
 		if(tasks.length===0){
 			return null

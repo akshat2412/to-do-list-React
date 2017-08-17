@@ -8,8 +8,8 @@ import '../css/index-grid.css';
 import '../css/index.css';
 
 export default class Add_task extends Component{
+	
 	setHeading(state, id){
-		console.log("received id is "+id)
 		if(id==0){	
 			return "Heading"
 		}
