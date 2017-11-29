@@ -5,22 +5,33 @@ This is a simple to-do-list that I build in React library.
 ## Screenshots
 
 * Home Page
+
 ![](/Screenshots/home_page.png)
 
+
 * User Registration
+
 ![](/Screenshots/user_reg.png)
 
 * All Tasks View
+
 ![](/Screenshots/task_view_1.png)
+
 ![](/Screenshots/task_view_2.png)
 
+
 * Active Tasks View
+
 ![](/Screenshots/active_task_view_1.png)
 
+
 * Add Task View
+
 ![](/Screenshots/add_task_view_1.png)
 
+
 * Completed Tasks View
+
 ![](/Screenshots/completed_task_view_1.png)
 
 
