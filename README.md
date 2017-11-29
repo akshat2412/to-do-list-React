@@ -4,17 +4,17 @@ This is a simple to-do-list that I build in React library.
 
 ## Screenshots
 
-* Home Page
+### Home Page
 
 ![](/Screenshots/home_page.png)
 
 
-* User Registration
+### User Registration
 
 ![](/Screenshots/user_reg.png)
 
 
-* All Tasks View
+### All Tasks View
 
 ![](/Screenshots/task_view_1.png)
 
@@ -23,19 +23,19 @@ This is a simple to-do-list that I build in React library.
 
 
 
-* Active Tasks View
+### Active Tasks View
 
 ![](/Screenshots/active_task_view_1.png)
 
 
 
-* Add Task View
+### Add Task View
 
 ![](/Screenshots/add_task_view_1.png)
 
 
 
-* Completed Tasks View
+### Completed Tasks View
 
 ![](/Screenshots/completed_task_view_1.png)
 
